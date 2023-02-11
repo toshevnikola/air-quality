@@ -1,0 +1,9 @@
+air-quality-profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: festive-dolphin-366719
+      dataset: dbt_ntoshev
+      location: europe-west6
