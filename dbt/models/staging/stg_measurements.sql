@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
 
-SELECT * FROM `festive-dolphin-366719.air_quality.air_quality`
+SELECT PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', times) as dt, station, parameter, value FROM `festive-dolphin-366719.air_quality.air_quality`
